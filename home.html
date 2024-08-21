@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Subha Ranjana</title>
+    <style>
+        /* Base Styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0a192f;
+            color: #ccd6f6;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            color: #64ffda;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #b2fef7;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #64ffda;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #0a192f;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: #64ffda;
+        }
+
+        .section {
+            margin-top: 70px; /* To prevent content from overlapping with the fixed nav */
+            padding: 50px 20px;
+        }
+
+        /* About Me Section with Machine Learning Theme */
+        .about-me-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #64ffda, #0a192f);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+        .about-me h2 {
+            font-size: 36px;
+            color: #64ffda;
+        }
+
+        .about-me-text {
+    flex: 1;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+        .about-me img {
+            max-width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        }
+
+        /* Flexbox Layout for Profile Section */
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 50px;
+            background-color: #112240;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+        }
+
+        .profile-img {
+    border: 1px solid rgb(76, 210, 237);
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            background-color: #112240;
+            color: #64ffda;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .skills-list li:hover {
+            background-color: #64ffda;
+            color: #0a192f;
+        }
+
+        /* Projects Section */
+        .project, .experience, .education {
+            background-color: #112240;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Buttons for Project Links */
+        .btn {
+            display: inline-block;
+            background-color: transparent;
+            color: #64ffda;
+            padding: 10px 20px;
+            border: 2px solid #64ffda;
+            border-radius: 4px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #64ffda;
+            color: #0a192f;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-img {
+                margin-bottom: 20px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            .about-me h2 {
+                font-size: 28px;
+            }
+
+            .about-me p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <div class="section about-me" id="about">
+            <div class="about-me-content">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                <div class="about-me-text">
+                    <p>
+                        I'm Subha Ranjana, an aspiring Machine Learning Engineer with a passion for using data to solve real-world problems. 
+                        With a strong foundation in algorithms and data structures, I enjoy building predictive models and exploring the potential of AI to create impactful solutions. 
+                        Currently pursuing my degree in Artificial Intelligence and Data Science, I'm always on the lookout for exciting placement opportunities to further hone my skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+        <!-- Skills Section -->
+        <div class="section" id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>Linux</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+<div class="section" id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <h3>Water Quality Prediction</h3>
+        <p>Using machine learning to predict water quality based on various input features.</p>
+        <a href="https://github.com/Subharanjana2/Water-Quality-Prediction-Intel-OneAPI-Hackathon/tree/main" target="_blank" class="btn">View on GitHub</a>
+    </div>
+    <div class="project">
+        <h3>Taxi Fare Prediction</h3>
+        <p>To estimate fare amounts, with a focus on accuracy and scalability for real-time predictions.</p>
+        <a href="https://github.com/Subharanjana2/Taxi-Fare-Prediction/tree/main" target="_blank" class="btn">View on GitHub</a>
+    </div>
+</div>
+
+        <!-- Contact Information Section -->
+        <div class="section" id="contact">
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:subharanjana2@gmail.com">subharanjana2@gmail.com</a></p>
+            <p>Phone: +91 9342620075</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/subha-ranjana-702794251/" target="_blank">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/Subharanjana2/" target="_blank">GitHub Profile</a></p>
+        </div>
+    </div>
+</body>
+</html>
